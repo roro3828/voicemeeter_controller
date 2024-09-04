@@ -84,9 +84,9 @@ int main(){
 		Sleep(1000);
     }
 
-    for(int i=-600;i<=120;i++){
+    for(int i=-600;i<=0;i++){
         float val=((float)i)/10.0f;
-        iVMR.VBVMR_SetParameterFloat("Strip[0].gain",val);
+        iVMR.VBVMR_SetParameterFloat("Strip[7].gain",val);
         std::cout<<val<<std::endl;
         Sleep(1);
     }
