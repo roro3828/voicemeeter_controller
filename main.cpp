@@ -1,6 +1,7 @@
 #include"VoicemeeterRemote.h"
 #include<iostream>
 #include<windows.h>
+#include"serial.h"
 
 static char uninstDirKey[]="SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall";
 #define INSTALLER_UNINST_KEY	"VB:Voicemeeter {17359A74-1236-5467}"
@@ -92,7 +93,6 @@ int main(){
     }
 
     iVMR.VBVMR_SetParameterFloat("Strip[0].gain",0);
-
     Sleep(10);
     iVMR.VBVMR_Logout();
 
